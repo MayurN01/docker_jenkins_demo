@@ -11,7 +11,7 @@ pipeline {
 				script {
 					try {
 						git branch: 'main' , url: https://github.com/MayurN01/docker_jenkins_demo.git
-					} catch (Exception e) {
+					} } catch (Exception e) {
 						echo "Failed to clone repository: ${e.message}"
 						error "Failed to clone repository"
 					}
